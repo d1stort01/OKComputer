@@ -1,0 +1,37 @@
+# IP包解析测试程序 Makefile
+# 编译命令: make -f Makefile.test
+
+# 编译器
+CXX = g++
+
+# 编译选项
+CXXFLAGS = -Wall -Wextra -std=c++11 -g
+
+# 目标文件
+TARGET = test_packet_parser
+SOURCES = test_packet_parser.cpp
+OBJECTS = test_packet_parser.o
+
+# 默认目标
+all: $(TARGET)
+
+# 编译可执行文件
+$(TARGET): $(OBJECTS)
+	$(CXX) $(OBJECTS) -o $(TARGET)
+	@echo "编译成功！生成可执行文件: $(TARGET)"
+
+# 编译对象文件
+test_packet_parser.o: test_packet_parser.cpp
+	$(CXX) $(CXXFLAGS) -c test_packet_parser.cpp -o test_packet_parser.o
+
+# 清理生成的文件
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+	@echo "清理完成！"
+
+# 运行程序
+run: $(TARGET)
+	@echo "运行测试程序..."
+	./$(TARGET)
+
+.PHONY: all clean run
