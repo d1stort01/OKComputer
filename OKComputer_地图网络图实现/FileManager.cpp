@@ -3,7 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <direct.h>
+//#include <direct.h>
 #include <sys/stat.h>
 
 // 构造函数

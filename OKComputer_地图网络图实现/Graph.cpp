@@ -151,7 +151,7 @@ std::pair<std::vector<int>, int> Graph::dijkstra(int startId, int endId) const {
     // 访问标记
     std::set<int> visited;
     // 优先队列：(距离, 节点ID)
-    std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<>> pq;
+    std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<std::pair<int, int>>> pq;
     
     // 初始化
     auto allIds = getAllVertexIds();

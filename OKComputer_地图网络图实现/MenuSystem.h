@@ -11,8 +11,15 @@ class MenuSystem {
 private:
     MapNetwork& mapNetwork;
     UserManager& userManager;
+
+    void handleUserMenuChoice();
+    void handleCityMenuChoice();
+    void handleRouteMenuChoice();
+    void handleNavigationMenuChoice();
+    void handleGraphMenuChoice();
+    void handleDataMenuChoice();
     bool running;
-    
+    void handleDisplayAllUsers();
     // 显示主菜单
     void displayMainMenu();
     

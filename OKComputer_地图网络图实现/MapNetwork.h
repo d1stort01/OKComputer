@@ -7,6 +7,7 @@
 #include "FileManager.h"
 #include <memory>
 #include <vector>
+#include <iostream>
 
 // 地图网络管理类
 class MapNetwork {

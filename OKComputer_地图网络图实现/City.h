@@ -13,6 +13,7 @@ private:
 public:
     // 构造函数
     City();
+    City(int cityId): id(cityId), name("") {};
     City(int cityId, const std::string& cityName);
     
     // 拷贝构造函数

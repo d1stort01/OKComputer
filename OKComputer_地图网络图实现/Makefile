@@ -2,7 +2,7 @@
 
 # 编译器设置
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -Wextra -O2
+CXXFLAGS = -std=c++14 -Wall -Wextra -O2
 
 # 源文件
 SOURCES = main.cpp City.cpp Graph.cpp UserManager.cpp FileManager.cpp MapNetwork.cpp MenuSystem.cpp
